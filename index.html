@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" async></script>
+    <link rel="stylesheet" href="color.css">
     <title>Colorex</title>
 </head>
 <body>
     <div class="main">
-        <h1>Generate Color</h1>
-        <button id="btn">Generate Color</button>
+        <h1>Colorex</h1>
+
+        <div class="controls">
+            <button id="btn">Generate</button>
+            <div class="format-switcher">
+                <button class="format-btn active" data-format="hex">HEX</button>
+                <button class="format-btn" data-format="rgb">RGB</button>
+                <button class="format-btn" data-format="hsl">HSL</button>
+            </div>
+        </div>
+
+        <p class="hint">or press <kbd>Space</kbd></p>
+
         <div id="container">
             <div class="box"></div>
             <div class="box"></div>
@@ -18,5 +28,7 @@
             <div class="box"></div>
         </div>
     </div>
+
+    <script src="Color.js"></script>
 </body>
 </html>
